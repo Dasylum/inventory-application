@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    h1= 'Cars'
+    each car in cars
+        div 
+            h2 #{car.name}
+            p #{car.description}
+            p #{car.price} 
+    a(href=`${brand}/addcar`) Add new car    

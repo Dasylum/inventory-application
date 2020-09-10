@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    h1= 'Add new car'
+    form(action=``, method='POST')
+        input(type="text" name='name' placeholder='Car')
+        input(type="text" name='description' placeholder='Description')
+        input(type="number" name='price' placeholder='Price')
+        input(type="submit")
